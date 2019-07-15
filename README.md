@@ -1,0 +1,2 @@
+# lojista
+Java training project

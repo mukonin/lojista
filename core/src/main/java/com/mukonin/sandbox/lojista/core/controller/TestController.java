@@ -16,7 +16,7 @@ import java.time.LocalTime;
 @RequestMapping("/")
 public class TestController {
 
-    @GetMapping("/")
+    @GetMapping
     public String index(Model model){
         model.addAttribute("date", LocalDate.now());
         model.addAttribute("time", LocalTime.now());

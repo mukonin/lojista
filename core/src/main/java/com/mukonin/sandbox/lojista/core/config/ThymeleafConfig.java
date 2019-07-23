@@ -21,7 +21,7 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.mukonin")
+@ComponentScan("com.mukonin.sandbox.lojista.core")
 public class ThymeleafConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 
     private ApplicationContext applicationContext;

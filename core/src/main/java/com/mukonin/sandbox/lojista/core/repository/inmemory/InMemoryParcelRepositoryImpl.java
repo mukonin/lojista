@@ -11,6 +11,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * Provides in-memory implementation for {@link ParcelRepository}
+ */
 @Repository
 @Slf4j
 public class InMemoryParcelRepositoryImpl implements ParcelRepository {

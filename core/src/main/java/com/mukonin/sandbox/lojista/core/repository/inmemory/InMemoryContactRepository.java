@@ -10,6 +10,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides in-memory implementation for {@link ContactRepository}
+ */
 @Slf4j
 @Repository
 public class InMemoryContactRepository implements ContactRepository {

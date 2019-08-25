@@ -5,6 +5,9 @@ import com.mukonin.sandbox.lojista.core.entity.DeliveryUnit;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Describes repository operations for {@link DeliveryUnit}
+ */
 public interface DeliveryUnitRepository {
     Optional<DeliveryUnit> getDeliveryUnitById(Integer id);
 

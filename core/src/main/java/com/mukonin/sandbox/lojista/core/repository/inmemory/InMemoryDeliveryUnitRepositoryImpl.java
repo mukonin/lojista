@@ -5,8 +5,15 @@ import com.mukonin.sandbox.lojista.core.repository.DeliveryUnitRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
 
+/**
+ * Provides in-memory implementation for {@link DeliveryUnitRepository}
+ */
 @Repository
 @Slf4j
 public class InMemoryDeliveryUnitRepositoryImpl implements DeliveryUnitRepository {

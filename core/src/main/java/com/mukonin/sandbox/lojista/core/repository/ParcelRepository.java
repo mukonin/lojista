@@ -5,6 +5,9 @@ import com.mukonin.sandbox.lojista.core.entity.Parcel;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Describes repository operations for {@link Parcel}
+ */
 public interface ParcelRepository {
 
     Optional<Parcel> findByTrackingNumber(String trackingNumber);

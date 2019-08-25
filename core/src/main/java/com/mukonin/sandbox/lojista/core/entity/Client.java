@@ -4,8 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
 /**
  * Intended to represent Client entity
  */
@@ -14,7 +12,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class Client {
     private Integer id;
-    private String name;
-    private LocalDate birthDate;
+    private String firstName;
+    private String lastName;
     private Integer contactId;
 }

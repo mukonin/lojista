@@ -5,6 +5,9 @@ import com.mukonin.sandbox.lojista.core.entity.Client;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Describes repository operations for {@link Client}
+ */
 public interface ClientRepository {
 
     Optional<Client> findById(Integer id);

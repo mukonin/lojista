@@ -5,12 +5,14 @@ import com.mukonin.sandbox.lojista.core.repository.ClientRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides in-memory implementation for {@link ClientRepository}
+ */
 @Repository
 @Slf4j
 public class InMemoryClientRepositoryImpl implements ClientRepository {
@@ -19,10 +21,10 @@ public class InMemoryClientRepositoryImpl implements ClientRepository {
 
     static {
         clients = new ArrayList<>(Arrays.asList(
-                new Client(1, "name1", LocalDate.now(), 1),
-                new Client(2, "name2", LocalDate.now(), 2),
-                new Client(3, "name3", LocalDate.now(), 3),
-                new Client(4, "name4", LocalDate.now(), 4)
+                new Client(1, "firstName1", "sendName1", 1),
+                new Client(2, "firstName2", "sendName1", 2),
+                new Client(3, "firstName3", "sendName1", 3),
+                new Client(4, "firstName4", "sendName1", 4)
 
         ));
     }

@@ -3,10 +3,32 @@
       xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <title>Lojista</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/operator.css}">
 </head>
 <body>
-<b><p>Operator: <span th:text="${user}"></span></p></b>
-<p>Today is: <span th:text="${date}"></span></p>
-<p>Time is: <span th:text="${time}"></span></p>
+<!--/*@thymesVar id="user" type="java.lang.String"*/-->
+<!--/*@thymesVar id="parcels" type="List<com.mukonin.sandbox.lojista.core.model.ParcelDTO>"*/-->
+<b><p align="right" th:text="'Operator: ' + ${user}"></p></b>
+<h2 align="center">Parcels</h2>
+<div class="header centered-horizontally">
+    <input class="search-field" type="text" placeholder="Tracking number"/>
+    <button>Search</button>
+    <button class="create-button shadow">Create</button>
+</div>
+<div class="parcel-info centered-horizontally shadow" th:each="parcel : ${parcels}">
+    <p class="tracking-number" th:text="${parcel.trackingNumber}"></p>
+    <p>
+        <b><span>Date of delivery: </span></b>
+        <span th:text="${parcel.dateOfDelivery}"></span>
+    </p>
+    <p>
+        <b><span>Client: </span></b>
+        <span th:text="${parcel.clientLastName}"></span>
+    </p>
+    <p>
+        <b><span>Phone number: </span></b>
+        <span th:text="${parcel.clientPhoneNumber}"></span>
+    </p>
+</div>
 </body>
 </html>

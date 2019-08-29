@@ -1,0 +1,66 @@
+p {
+    margin: 0;
+}
+
+button {
+    color: white;
+    background-color: black;
+    padding: 7px 12px 7px 12px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px 1px #ccc;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+    background-color: #707070;
+}
+
+.create-button {
+    position: absolute;
+    right: 0;
+}
+
+.create-button:active {
+    position: absolute;
+}
+
+.search-field {
+    border: 1px solid black;
+    padding: 6px;
+    margin-right: 5px;
+    outline: none;
+    box-shadow: 0 0 2px 0 #ccc;
+}
+
+.parcel-info {
+    max-width: 800px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.header {
+    max-width: 810px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.shadow {
+    box-shadow: 0 0 2px 0 #ccc;
+}
+
+.centered-horizontally {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tracking-number {
+    background-color: #e2e2e2;
+    color: black;
+    font-weight: bold;
+    font-size: 18pt;
+    margin-bottom: 5px;
+    padding: 0 5px 0 5px;
+}

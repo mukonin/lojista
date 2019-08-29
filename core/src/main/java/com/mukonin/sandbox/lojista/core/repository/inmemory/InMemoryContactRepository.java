@@ -21,13 +21,13 @@ public class InMemoryContactRepository implements ContactRepository {
 
     static {
         contacts = new ArrayList<>(Arrays.asList(
-                new Contact(1, "address1", "phone1"),
-                new Contact(2, "address2", "phone2"),
-                new Contact(3, "address3", "phone3"),
-                new Contact(4, "address4", "phone4"),
-                new Contact(5, "address5", "phone5"),
-                new Contact(6, "address6", "phone6"),
-                new Contact(7, "address7", "phone7")
+                new Contact(1, "phone1", "address1"),
+                new Contact(2, "phone2", "address2"),
+                new Contact(3, "phone3", "address3"),
+                new Contact(4, "phone4", "address4"),
+                new Contact(5, "phone5", "address5"),
+                new Contact(6, "phone6", "address6"),
+                new Contact(7, "phone7", "address7")
         ));
     }
 

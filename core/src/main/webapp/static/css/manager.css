@@ -1,0 +1,15 @@
+.delivery-drop-down {
+    padding: 6px;
+    margin-right: 5px;
+    outline: none;
+    box-shadow: 0 0 2px 0 #ccc;
+}
+
+.add-operator-button {
+    position: absolute;
+    right: 0;
+}
+
+.add-operator-button:active {
+    position: absolute;
+}

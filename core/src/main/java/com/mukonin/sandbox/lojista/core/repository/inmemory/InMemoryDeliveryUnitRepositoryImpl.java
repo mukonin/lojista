@@ -22,9 +22,9 @@ public class InMemoryDeliveryUnitRepositoryImpl implements DeliveryUnitRepositor
 
     static {
         deliveryUnits = new ArrayList<>(Arrays.asList(
-                new DeliveryUnit(1, "Unit1", Arrays.asList(1, 2, 3)),
-                new DeliveryUnit(2, "Unit2", Collections.singletonList(4)),
-                new DeliveryUnit(3, "Unit3", Arrays.asList(5, 6))
+                new DeliveryUnit(1, "Unit1", Arrays.asList(1, 2, 3), Arrays.asList("FirstOperator", "SecondOperator")),
+                new DeliveryUnit(2, "Unit2", Collections.singletonList(4), Collections.emptyList()),
+                new DeliveryUnit(3, "Unit3", Arrays.asList(5, 6), Collections.emptyList())
         ));
     }
 

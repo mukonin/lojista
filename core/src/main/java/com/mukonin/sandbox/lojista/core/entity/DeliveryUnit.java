@@ -16,4 +16,5 @@ public class DeliveryUnit {
     private Integer id;
     private String unitNumber;
     private List<Integer> parcels;
+    private List<String> operators;
 }

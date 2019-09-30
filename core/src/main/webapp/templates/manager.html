@@ -3,10 +3,28 @@
       xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <title>Lojista</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/manager.css}">
+
 </head>
 <body>
-<b><p>Manager: <span th:text="${user}"></span></p></b>
-<p>Today is: <span th:text="${date}"></span></p>
-<p>Time is: <span th:text="${time}"></span></p>
+<b><p align="right" th:text="'Manager: ' + ${user}"></p></b>
+<h2 align="center">Operators</h2>
+<div class="header centered-horizontally">
+    <select th:field="*{deliveries}" class="delivery-drop-down">
+        <option th:each="delivery : ${deliveries}" th:value="${delivery.deliveryNumber}"
+                th:text="${delivery.deliveryNumber}">
+        </option>
+    </select>
+    <button class="add-operator-button shadow">Add Operator</button>
+</div>
+
+
+<div class="content-box centered-horizontally shadow">
+    <!--TODO: show users per delivery using JQuery-->
+    <div th:each="user: ${deliveries.get(0).operators}">
+        <p class="table-row-header" th:text="${user}"></p>
+    </div>
+</div>
 </body>
 </html>

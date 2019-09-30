@@ -4,6 +4,7 @@
 <head>
     <title>Lojista</title>
     <link rel="stylesheet" type="text/css" th:href="@{/css/operator.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 </head>
 <body>
 <!--/*@thymesVar id="user" type="java.lang.String"*/-->
@@ -15,8 +16,8 @@
     <button>Search</button>
     <button class="create-button shadow">Create</button>
 </div>
-<div class="parcel-info centered-horizontally shadow" th:each="parcel : ${parcels}">
-    <p class="tracking-number" th:text="${parcel.trackingNumber}"></p>
+<div class="content-box centered-horizontally shadow" th:each="parcel : ${parcels}">
+    <p class="table-row-header" th:text="${parcel.trackingNumber}"></p>
     <p>
         <b><span>Date of delivery: </span></b>
         <span th:text="${parcel.dateOfDelivery}"></span>
